@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="push_right">
     <h1>Edit Users</h1>
     <h1>Edit User</h1>
     <form v-on:submit.prevent="editUser">
@@ -55,4 +55,11 @@ export default {
   }
 };
 </script>
-<style scoped></style>
+<style scoped>
+.push_right{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.clearfix {
+  clear: left;
+}</style>

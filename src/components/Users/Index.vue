@@ -1,10 +1,11 @@
 <template>
-  <div>
-    <h1>Get All Users</h1>
-    <div>จํานวนผู้ใช้งาน {{ users.length }}</div>
-    <div v-for="user in users" v-bind:key="user.id">
+  <div class="push_right">
+    <div v-if="users.length"></div>
+      <h1>Get All Users</h1>
+      <div>จํานวนผู้ใช้งาน {{ users.length }}</div>
+      <div v-for="user in users" v-bind:key="user.id">
       <div>id: {{ user.id }}</div>
-      <div>ชืEอ-นามสกุล: {{ user.name }} - {{ user.lastname }}</div>
+      <div>ชื่อ-นามสกุล: {{ user.name }} - {{ user.lastname }}</div>
       <div>email: {{ user.email }}</div>
       <div>password: {{ user.password }}</div>
       <p>
@@ -52,4 +53,12 @@ export default {
   }
 };
 </script>
-<style scoped></style>
+<style scoped>
+.push_right{
+  margin-top: 100px;
+  margin-left: 20px;
+}
+.clearfix {
+clear: left;
+}
+</style>

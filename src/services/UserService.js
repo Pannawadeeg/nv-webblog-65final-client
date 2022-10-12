@@ -1,4 +1,4 @@
-import Api from '@/services/Api'
+import Api from 'http://10.31.27.240:8081/speakers'
 export default {
     index(search) {
         return Api().get('users')

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="push_right">
     <h1>Show User</h1>
     <p>id: {{ user.id }}</p>
     <p>ชื่อ-นามสกุล: {{ user.name }} - {{ user.lastname }}</p>
@@ -23,4 +23,12 @@ export default {
   }
 };
 </script>
-<style scoped></style>
+<style scoped>
+.push_right{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.clearfix {
+  clear: left;
+}
+</style>
